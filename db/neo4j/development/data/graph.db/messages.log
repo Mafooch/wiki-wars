@@ -375,3 +375,743 @@ Storage files: (filename : modification date - size)
 2015-05-20 20:39:54.367+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
 2015-05-20 21:36:13.053+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population started: [:Article(uuid) [provider: {key=lucene, version=1.0}]]
 2015-05-20 21:36:13.070+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob]: Index population completed. Index is now online: [:Article(uuid) [provider: {key=lucene, version=1.0}]]
+2015-06-23 19:32:57.483+0000 INFO  [o.n.s.CommunityNeoServer]: Setting startup timeout to: 120000ms based on -1
+2015-06-23 19:32:57.658+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-06-23 19:32:57.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-06-23 19:32:57.761+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-06-23 19:32:57.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=643M
+2015-06-23 19:32:57.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=178M
+2015-06-23 19:32:57.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=787M
+2015-06-23 19:32:57.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=546M
+2015-06-23 19:32:57.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db
+2015-06-23 19:32:57.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=619M
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-06-23 19:32:57.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-06-23 19:32:57.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-06-23 19:32:57.766+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 8.00 GB
+2015-06-23 19:32:57.767+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 40.11 MB
+2015-06-23 19:32:57.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 4.63 GB
+2015-06-23 19:32:57.768+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 1.00 GB
+2015-06-23 19:32:57.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 908.75 MB
+2015-06-23 19:32:57.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-06-23 19:32:57.769+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 106.17 MB
+2015-06-23 19:32:57.770+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 123.75 MB
+2015-06-23 19:32:57.770+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 1.97 GB
+2015-06-23 19:32:57.777+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2015-06-23 19:32:57.777+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2015-06-23 19:32:57.780+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=710.69 kB, max=48.00 MB, threshold=0.00 B
+2015-06-23 19:32:57.780+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=34.13 MB, used=12.48 MB, max=266.25 MB, threshold=?
+2015-06-23 19:32:57.780+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=4.25 MB, used=4.25 MB, max=33.25 MB, threshold=?
+2015-06-23 19:32:57.781+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=85.38 MB, used=868.19 kB, max=1.68 GB, threshold=0.00 B
+2015-06-23 19:32:57.781+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=12.91 MB, max=82.00 MB, threshold=0.00 B
+2015-06-23 19:32:57.781+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-06-23 19:32:57.783+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.10.3; arch: x86_64; cpus: 4
+2015-06-23 19:32:57.784+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2015-06-23 19:32:57.784+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 77
+2015-06-23 19:32:57.785+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 3043@Joshuas-MacBook-Pro-3.local
+2015-06-23 19:32:57.785+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-06-23 19:32:57.785+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: America/New_York
+2015-06-23 19:32:57.786+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-06-23 19:32:57.786+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-06-23 19:32:57.786+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-06-23 19:32:57.786+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 24.79-b02
+2015-06-23 19:32:57.786+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-06-23 19:32:57.787+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -XX:-OmitStackTraceInFastThrow, -Dneo4j.home=/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development, -Dneo4j.instance=/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development, -Dfile.encoding=UTF-8]
+2015-06-23 19:32:57.787+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-2.1.6.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/mimepull-1.6.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/lucene-core-3.6.2.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-udc-2.1.6.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-xml-9.0.5.v20130815.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/opencsv-2.3.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-compiler-2.1-2.1.6.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/asm-3.1.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-kernel-2.1.6.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/scala-library-2.10.4.jar
+2015-06-23 19:32:57.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-shell-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-compiler-1.9-2.0.3.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-lucene-index-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jackson-jaxrs-1.9.7.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/opencsv-2.3.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-io-1.4.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/rhino-1.7R4.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/neo4j-browser-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-jmx-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/logback-classic-1.1.2.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/parboiled-scala_2.10-1.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jersey-server-1.9.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/neo4j-server-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/server-api-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-digester-1.8.1.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-beanutils-1.8.0.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-graph-matching-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-compiler-2.0-2.0.3.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-graph-algo-2.1.6.jar
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/conf/
+2015-06-23 19:32:57.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/slf4j-api-1.6.2.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-server-9.0.5.v20130815.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jcl-over-slf4j-1.6.1.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-beanutils-core-1.8.0.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/javax.servlet-3.0.0.v201112011016.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-primitive-collections-2.1.6.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/logback-core-1.1.2.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-util-9.0.5.v20130815.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/logback-access-1.1.2.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/geronimo-jta_1.1_spec-1.1.1.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-commons-2.1.6.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-webapp-9.0.5.v20130815.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-io-9.0.5.v20130815.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jersey-core-1.9.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-lang-2.4.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-collections-3.2.1.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-servlet-9.0.5.v20130815.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jackson-core-asl-1.9.7.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/janino-2.6.1.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/parboiled-core-1.1.6.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-compiler-2.6.1.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/neo4j-server-2.1.6-static-web.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/rrd4j-2.0.7.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-http-9.0.5.v20130815.jar
+2015-06-23 19:32:57.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jersey-multipart-1.9.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/bcprov-jdk16-140.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-security-9.0.5.v20130815.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-configuration-1.6.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.7.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/joshuamaffuccio/Library/Java/Extensions
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:32:57.792+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = US
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: log4j.configuration = file:conf/log4j.properties
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2015-06-23 19:32:57.793+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/joshuamaffuccio
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = America/New_York
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = joshuamaffuccio
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = en
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2015-06-23 19:32:57.794+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface awdl0:
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:10ab:ccff:fe8a:a6cc%8
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface en0:
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:62f8:1dff:feaf:c54%4
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.1.9
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2015-06-23 19:32:57.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2015-06-23 19:32:57.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-06-23 19:32:57.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-06-23 19:32:57.800+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-06-23 19:32:58.022+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db.names non clean shutdown detected
+2015-06-23 19:32:58.029+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=38b)
+2015-06-23 19:32:58.031+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db non clean shutdown detected
+2015-06-23 19:32:58.031+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-06-23 19:32:58.032+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db.names non clean shutdown detected
+2015-06-23 19:32:58.032+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=76b)
+2015-06-23 19:32:58.034+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db non clean shutdown detected
+2015-06-23 19:32:58.034+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=5b)
+2015-06-23 19:32:58.035+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.strings non clean shutdown detected
+2015-06-23 19:32:58.035+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.strings] brickCount=0 brickSize=572416b mappedMem=572522496b (storeSize=128b)
+2015-06-23 19:32:58.036+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index.keys non clean shutdown detected
+2015-06-23 19:32:58.036+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=152b)
+2015-06-23 19:32:58.037+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index non clean shutdown detected
+2015-06-23 19:32:58.037+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=27b)
+2015-06-23 19:32:58.039+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.arrays non clean shutdown detected
+2015-06-23 19:32:58.039+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=648960b mappedMem=649068544b (storeSize=128b)
+2015-06-23 19:32:58.948+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db non clean shutdown detected
+2015-06-23 19:32:58.950+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db] brickCount=10 brickSize=674204b mappedMem=674234368b (storeSize=6742327b)
+2015-06-23 19:32:58.956+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipstore.db non clean shutdown detected
+2015-06-23 19:32:58.956+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipstore.db] brickCount=0 brickSize=8252276b mappedMem=825229312b (storeSize=0b)
+2015-06-23 19:32:58.957+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db.labels non clean shutdown detected
+2015-06-23 19:32:58.957+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=68b)
+2015-06-23 19:32:59.284+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db non clean shutdown detected
+2015-06-23 19:32:59.285+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db] brickCount=10 brickSize=186645b mappedMem=186646528b (storeSize=1866465b)
+2015-06-23 19:32:59.287+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.schemastore.db non clean shutdown detected
+2015-06-23 19:32:59.288+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=192b)
+2015-06-23 19:32:59.290+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipgroupstore.db non clean shutdown detected
+2015-06-23 19:32:59.290+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-06-23 19:32:59.291+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore non clean shutdown detected
+2015-06-23 19:32:59.291+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2015-06-23 19:32:59.414+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-06-23 19:32:59.545+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[0](property[0]) is ONLINE
+2015-06-23 19:32:59.553+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Non clean shutdown detected on log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log.1]. Recovery started ...
+2015-06-23 19:32:59.554+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log.1] logVersion=0 with committed tx=1
+2015-06-23 19:32:59.770+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log.1] entries found=51 lastEntryPos=2986
+2015-06-23 19:32:59.771+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log.1] version=0, lastTxId=11 (recovered)
+2015-06-23 19:32:59.771+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] sorting 1 xids
+2015-06-23 19:32:59.774+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] checkRecoveryComplete 0 xids
+2015-06-23 19:32:59.779+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db.names rebuild id generator, highId=2 defragged count=0
+2015-06-23 19:32:59.780+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db rebuild id generator, highId=0 defragged count=0
+2015-06-23 19:32:59.782+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db.names rebuild id generator, highId=3 defragged count=0
+2015-06-23 19:32:59.783+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db rebuild id generator, highId=1 defragged count=0
+2015-06-23 19:32:59.785+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index.keys rebuild id generator, highId=5 defragged count=0
+2015-06-23 19:32:59.787+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index rebuild id generator, highId=3 defragged count=0
+2015-06-23 19:32:59.788+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.strings rebuild id generator, highId=2 defragged count=0
+2015-06-23 19:32:59.789+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.arrays rebuild id generator, highId=2 defragged count=0
+2015-06-23 19:33:00.344+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db rebuild id generator, highId=11 defragged count=0
+2015-06-23 19:33:00.344+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipstore.db rebuild id generator, highId=0 defragged count=0
+2015-06-23 19:33:00.345+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db.labels rebuild id generator, highId=2 defragged count=0
+2015-06-23 19:33:00.679+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db rebuild id generator, highId=4 defragged count=0
+2015-06-23 19:33:00.689+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.schemastore.db rebuild id generator, highId=4 defragged count=0
+2015-06-23 19:33:00.690+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipgroupstore.db rebuild id generator, highId=1 defragged count=0
+2015-06-23 19:33:00.691+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore rebuild id generator, highId=9 defragged count=0
+2015-06-23 19:33:00.692+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[nioneo_logical.log] recovery completed.
+2015-06-23 19:33:00.692+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Recovery on log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log.1] completed.
+2015-06-23 19:33:00.694+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Rebuilding lucene scan store, this may take a while
+2015-06-23 19:33:00.712+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Lucene scan store rebuilt (roughly 3 nodes)
+2015-06-23 19:33:00.717+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/tm_tx_log.1
+2015-06-23 19:33:00.740+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :Article(uuid) is ONLINE
+2015-06-23 19:33:00.741+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2015-06-23 19:33:00.756+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Non clean shutdown detected on log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log.1]. Recovery started ...
+2015-06-23 19:33:00.757+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log.1] logVersion=0 with committed tx=1
+2015-06-23 19:33:00.757+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log.1] entries found=0 lastEntryPos=16
+2015-06-23 19:33:00.757+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log.1] version=0, lastTxId=-1 (recovered)
+2015-06-23 19:33:00.758+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] sorting 0 xids
+2015-06-23 19:33:00.758+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] checkRecoveryComplete 0 xids
+2015-06-23 19:33:00.758+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: XaResourceManager[lucene.log] recovery completed.
+2015-06-23 19:33:00.758+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Recovery on log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log.1] completed.
+2015-06-23 19:33:00.764+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-06-23 19:33:00.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1432154390394, randomId=8611599302460864457, storeVersion=14406081294923270, upgradeTime=1432154390394, upgradeId=8611599302460864457}
+2015-06-23 19:33:00.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.6
+2015-06-23 19:33:00.765+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-06-23 19:33:00.771+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server API (server-api), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server (neo4j-server), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-06-23 19:33:00.773+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.773+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:00.773+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.3
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-06-23 19:33:00.776+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=4 high=3
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=4 high=3
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=1 high=0
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=11 high=10
+2015-06-23 19:33:00.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=3 high=2
+2015-06-23 19:33:00.778+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=2 high=1
+2015-06-23 19:33:00.778+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=2 high=1
+2015-06-23 19:33:00.778+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-06-23 19:33:00.778+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-06-23 19:33:00.778+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2015-06-23 19:33:00.778+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2015-06-23 19:33:00.779+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-06-23 19:33:00.779+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 120137318400 / 14436159488 / 12
+Storage files: (filename : modification date - size)
+2015-06-23 19:33:00.787+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2015-05-20T16:39:51-0400 - 11.00 B
+2015-06-23 19:33:00.788+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-06-23 19:33:00.788+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2015-06-23T15:01:24-0400 - 40.00 B
+2015-06-23 19:33:00.788+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2015-06-23T15:01:24-0400 - 16.00 B
+2015-06-23 19:33:00.788+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2015-06-23T15:01:24-0400 - 4.00 B
+2015-06-23 19:33:00.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-06-23T15:01:24-0400 - 60.00 B
+2015-06-23 19:33:00.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-06-23T15:01:24-0400 - 0.00 B
+2015-06-23 19:33:00.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-06-23T15:33:00-0400 - 100.34 kB
+2015-06-23 19:33:00.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-06-23T15:33:00-0400 - 81.00 B
+2015-06-23 19:33:00.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-06-23T15:32:59-0400 - 5.00 B
+2015-06-23 19:33:00.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-06-23T15:32:59-0400 - 76.00 B
+2015-06-23 19:33:00.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-06-23T15:32:59-0400 - 1.78 MB
+2015-06-23 19:33:00.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-06-23T15:01:24-0400 - 68.00 B
+2015-06-23 19:33:00.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-06-23T15:32:59-0400 - 6.43 MB
+2015-06-23 19:33:00.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-06-23T15:01:24-0400 - 128.00 B
+2015-06-23 19:33:00.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-06-23T15:32:59-0400 - 27.00 B
+2015-06-23 19:33:00.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-06-23T15:32:59-0400 - 152.00 B
+2015-06-23 19:33:00.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-06-23T15:01:24-0400 - 128.00 B
+2015-06-23 19:33:00.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-06-23T15:01:24-0400 - 25.00 B
+2015-06-23 19:33:00.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-06-23T15:01:24-0400 - 0.00 B
+2015-06-23 19:33:00.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-06-23T15:01:24-0400 - 0.00 B
+2015-06-23 19:33:00.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-06-23T15:01:24-0400 - 38.00 B
+2015-06-23 19:33:00.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-06-23T15:32:59-0400 - 9.00 B
+2015-06-23 19:33:00.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-06-23T15:32:59-0400 - 192.00 B
+2015-06-23 19:33:00.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:00.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2015-06-23T15:33:00-0400 - 2.92 kB
+2015-06-23 19:33:00.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2015-06-23T15:01:24-0400 - 4.00 B
+2015-06-23 19:33:00.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-06-23 19:33:00.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:     index:
+2015-06-23 19:33:00.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-06-23 19:33:00.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:         1:
+2015-06-23 19:33:00.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.cfs: 2015-06-23T15:33:00-0400 - 441.00 B
+2015-06-23 19:33:00.798+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2015-05-20T17:36:13-0400 - 16.00 kB
+2015-06-23 19:33:00.798+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2015-06-23T15:01:24-0400 - 20.00 B
+2015-06-23 19:33:00.798+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_1: 2015-06-23T15:01:24-0400 - 46.00 B
+2015-06-23 19:33:00.798+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2015-06-23T15:01:24-0400 - 0.00 B
+2015-06-23 19:33:00.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2015-06-23T15:33:00-0400 - 16.50 kB
+2015-06-23 19:33:00.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-05-20T17:36:13-0400 - 16.50 kB
+2015-06-23 19:33:00.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-05-20T17:36:13-0400 - 16.50 kB
+2015-06-23 19:33:00.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-06-23 19:33:00.799+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-06-23 19:33:00.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _3.cfs: 2015-06-23T15:32:59-0400 - 225.00 B
+2015-06-23 19:33:00.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _4.cfs: 2015-06-23T15:33:00-0400 - 225.00 B
+2015-06-23 19:33:00.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2015-06-23T15:32:59-0400 - 20.00 B
+2015-06-23 19:33:00.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_1: 2015-06-23T15:32:59-0400 - 244.00 B
+2015-06-23 19:33:00.800+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-06-23T15:32:59-0400 - 0.00 B
+2015-06-23 19:33:00.801+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-06-23T15:33:00-0400 - 714.00 B
+2015-06-23 19:33:00.801+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-06-23T15:32:59-0400 - 714.00 B
+2015-06-23 19:33:00.801+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-05-20T17:36:13-0400 - 17.19 kB
+2015-06-23 19:33:00.802+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-05-20T16:39:50-0400 - 0.00 B
+2015-06-23 19:33:00.803+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:00.804+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-06-23 19:33:00.839+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2015-06-23 19:33:00.839+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2015-06-23 19:33:00.839+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now unavailable
+2015-06-23 19:33:00.842+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log
+2015-06-23 19:33:00.842+0000 INFO  [o.n.k.i.t.TxManager]: TM shutting down
+2015-06-23 19:33:00.846+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Closed log /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log
+2015-06-23 19:33:00.849+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db.names hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.851+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.852+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db.names hit=0 miss=5 switches=0 ooe=0
+2015-06-23 19:33:00.852+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db hit=0 miss=3 switches=0 ooe=0
+2015-06-23 19:33:00.853+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.strings hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.854+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index.keys hit=0 miss=15 switches=0 ooe=0
+2015-06-23 19:33:00.854+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index hit=0 miss=9 switches=0 ooe=0
+2015-06-23 19:33:00.855+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.arrays hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.856+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db hit=0 miss=22 switches=0 ooe=0
+2015-06-23 19:33:00.858+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipstore.db hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.859+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db.labels hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.859+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db hit=0 miss=12 switches=0 ooe=0
+2015-06-23 19:33:00.861+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.schemastore.db hit=0 miss=13 switches=0 ooe=0
+2015-06-23 19:33:00.862+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipgroupstore.db hit=0 miss=0 switches=0 ooe=0
+2015-06-23 19:33:00.863+0000 INFO  [o.n.k.i.n.s.StoreFactory]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore hit=0 miss=31 switches=0 ooe=0
+2015-06-23 19:33:00.865+0000 INFO  [o.n.k.i.n.x.NeoStoreXaDataSource]: NeoStore closed
+2015-06-23 19:33:00.865+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2015-06-23 19:33:00.865+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
+2015-06-23 19:33:00.869+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.mapped_memory=643M
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.nodestore.db.mapped_memory=178M
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.relationshipstore.db.mapped_memory=787M
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.strings.mapped_memory=546M
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: neostore.propertystore.db.arrays.mapped_memory=619M
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: remote_shell_enabled=true
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-06-23 19:33:00.870+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-06-23 19:33:00.871+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 8.00 GB
+2015-06-23 19:33:00.872+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 55.65 MB
+2015-06-23 19:33:00.872+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 4.63 GB
+2015-06-23 19:33:00.872+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 1.00 GB
+2015-06-23 19:33:00.872+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 908.75 MB
+2015-06-23 19:33:00.873+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-06-23 19:33:00.873+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 105.43 MB
+2015-06-23 19:33:00.873+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 123.75 MB
+2015-06-23 19:33:00.873+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 1.97 GB
+2015-06-23 19:33:00.873+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2015-06-23 19:33:00.874+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2015-06-23 19:33:00.874+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.02 MB, max=48.00 MB, threshold=0.00 B
+2015-06-23 19:33:00.875+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=34.13 MB, used=13.57 MB, max=266.25 MB, threshold=?
+2015-06-23 19:33:00.875+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=4.25 MB, used=386.30 kB, max=33.25 MB, threshold=?
+2015-06-23 19:33:00.876+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=85.38 MB, used=5.06 MB, max=1.68 GB, threshold=0.00 B
+2015-06-23 19:33:00.877+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=18.75 MB, max=82.00 MB, threshold=0.00 B
+2015-06-23 19:33:00.877+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-06-23 19:33:00.877+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.10.3; arch: x86_64; cpus: 4
+2015-06-23 19:33:00.877+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 77
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 3043@Joshuas-MacBook-Pro-3.local
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: America/New_York
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 24.79-b02
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -XX:-OmitStackTraceInFastThrow, -Dneo4j.home=/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development, -Dneo4j.instance=/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development, -Dfile.encoding=UTF-8]
+2015-06-23 19:33:00.878+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-2.1.6.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/mimepull-1.6.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/lucene-core-3.6.2.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-udc-2.1.6.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-xml-9.0.5.v20130815.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/opencsv-2.3.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-compiler-2.1-2.1.6.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/asm-3.1.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-kernel-2.1.6.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/scala-library-2.10.4.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-shell-2.1.6.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-compiler-1.9-2.0.3.jar
+2015-06-23 19:33:00.884+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-lucene-index-2.1.6.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jackson-jaxrs-1.9.7.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/opencsv-2.3.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/concurrentlinkedhashmap-lru-1.3.1.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-io-1.4.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/rhino-1.7R4.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/neo4j-browser-2.1.6.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-jmx-2.1.6.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/logback-classic-1.1.2.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/parboiled-scala_2.10-1.1.6.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jersey-server-1.9.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-logging-1.1.1.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/neo4j-server-2.1.6.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/server-api-2.1.6.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-digester-1.8.1.jar
+2015-06-23 19:33:00.885+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-beanutils-1.8.0.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-graph-matching-2.1.6.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-compiler-2.0-2.0.3.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-graph-algo-2.1.6.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/conf/
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/slf4j-api-1.6.2.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-server-9.0.5.v20130815.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jcl-over-slf4j-1.6.1.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-beanutils-core-1.8.0.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/javax.servlet-3.0.0.v201112011016.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-primitive-collections-2.1.6.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/logback-core-1.1.2.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-util-9.0.5.v20130815.jar
+2015-06-23 19:33:00.886+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/logback-access-1.1.2.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/geronimo-jta_1.1_spec-1.1.1.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/neo4j-cypher-commons-2.1.6.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-webapp-9.0.5.v20130815.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-io-9.0.5.v20130815.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jersey-core-1.9.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-lang-2.4.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-collections-3.2.1.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-servlet-9.0.5.v20130815.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jackson-core-asl-1.9.7.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/janino-2.6.1.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/parboiled-core-1.1.6.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-compiler-2.6.1.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/neo4j-server-2.1.6-static-web.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/rrd4j-2.0.7.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-http-9.0.5.v20130815.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jersey-multipart-1.9.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/bcprov-jdk16-140.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jetty-security-9.0.5.v20130815.jar
+2015-06-23 19:33:00.887+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jsr311-api-1.1.2.r612.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/commons-configuration-1.6.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/system/lib/jackson-mapper-asl-1.9.7.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/joshuamaffuccio/Library/Java/Extensions
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2015-06-23 19:33:00.888+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = US
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: log4j.configuration = file:conf/log4j.properties
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2015-06-23 19:33:00.889+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/joshuamaffuccio
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = America/New_York
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = joshuamaffuccio
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = en
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2015-06-23 19:33:00.890+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-06-23 19:33:00.891+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface awdl0:
+2015-06-23 19:33:00.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:10ab:ccff:fe8a:a6cc%8
+2015-06-23 19:33:00.891+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface en0:
+2015-06-23 19:33:00.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:62f8:1dff:feaf:c54%4
+2015-06-23 19:33:00.891+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.1.9
+2015-06-23 19:33:00.891+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2015-06-23 19:33:00.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2015-06-23 19:33:00.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-06-23 19:33:00.892+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-06-23 19:33:00.892+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-06-23 19:33:00.900+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=76b)
+2015-06-23 19:33:00.901+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshiptypestore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=0b)
+2015-06-23 19:33:00.901+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db.names] brickCount=0 brickSize=0b mappedMem=0b (storeSize=114b)
+2015-06-23 19:33:00.902+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.labeltokenstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=5b)
+2015-06-23 19:33:00.902+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.strings] brickCount=0 brickSize=572416b mappedMem=572522496b (storeSize=256b)
+2015-06-23 19:33:00.903+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index.keys] brickCount=0 brickSize=0b mappedMem=0b (storeSize=190b)
+2015-06-23 19:33:00.903+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.index] brickCount=0 brickSize=0b mappedMem=0b (storeSize=27b)
+2015-06-23 19:33:00.904+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db.arrays] brickCount=0 brickSize=648960b mappedMem=649068544b (storeSize=256b)
+2015-06-23 19:33:00.904+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.propertystore.db] brickCount=0 brickSize=674204b mappedMem=674234368b (storeSize=451b)
+2015-06-23 19:33:00.905+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipstore.db] brickCount=0 brickSize=8252276b mappedMem=825229312b (storeSize=0b)
+2015-06-23 19:33:00.905+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db.labels] brickCount=0 brickSize=0b mappedMem=0b (storeSize=136b)
+2015-06-23 19:33:00.906+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.nodestore.db] brickCount=0 brickSize=186645b mappedMem=186646528b (storeSize=60b)
+2015-06-23 19:33:00.906+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.schemastore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=256b)
+2015-06-23 19:33:00.907+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore.relationshipgroupstore.db] brickCount=0 brickSize=0b mappedMem=0b (storeSize=25b)
+2015-06-23 19:33:00.907+0000 INFO  [o.n.k.i.n.s.StoreFactory]: [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/neostore] brickCount=0 brickSize=0b mappedMem=0b (storeSize=81b)
+2015-06-23 19:33:00.915+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.initIndexes: index on :label[0](property[0]) is ONLINE
+2015-06-23 19:33:00.919+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/nioneo_logical.log.1] version=1, lastTxId=11 (clean)
+2015-06-23 19:33:00.922+0000 INFO  [o.n.k.i.t.TxManager]: TM opening log: /Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/tm_tx_log.1
+2015-06-23 19:33:00.922+0000 INFO  [o.n.k.i.a.i.IndexingService]: IndexingService.start: index on :label[0](property[0]) is ONLINE
+2015-06-23 19:33:00.923+0000 INFO  [o.n.k.i.t.KernelHealth]: Kernel health set to OK
+2015-06-23 19:33:01.125+0000 INFO  [o.n.k.i.t.x.XaLogicalLog]: Opened logical log [/Users/joshuamaffuccio/Dropbox/Ruby/wiki-wars/db/neo4j/development/data/graph.db/index/lucene.log.1] version=1, lastTxId=1 (clean)
+2015-06-23 19:33:01.126+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-06-23 19:33:01.126+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1432154390394, randomId=8611599302460864457, storeVersion=14406081294923270, upgradeTime=1432154390394, upgradeId=8611599302460864457}
+2015-06-23 19:33:01.126+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.6
+2015-06-23 19:33:01.126+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-06-23 19:33:01.133+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.133+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server API (server-api), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j Server (neo4j-server), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.3; revision: 2.0.3:2.0-maint:72/307c563c11b75fdc71cfa6df05daf9b08d6c37dc
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Commons (neo4j-cypher-commons), version: 2.1.6; revision: 2.1.6:2.1-maint:605/0d7f25fc608f15c54ec1a01f4ba4564ebfb1071a
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.3
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.3
+2015-06-23 19:33:01.134+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.3
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-06-23 19:33:01.135+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-06-23 19:33:01.136+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=4 high=3
+2015-06-23 19:33:01.136+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=4 high=3
+2015-06-23 19:33:01.137+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2015-06-23 19:33:01.137+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2015-06-23 19:33:01.138+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=1 high=0
+2015-06-23 19:33:01.138+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=11 high=10
+2015-06-23 19:33:01.138+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=3 high=2
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=2 high=1
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=2 high=1
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS START ---
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for PERSISTENCE_WINDOW_POOL_STATS END ---
+2015-06-23 19:33:01.139+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-06-23 19:33:01.140+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 120137318400 / 14444691456 / 12
+Storage files: (filename : modification date - size)
+2015-06-23 19:33:01.140+0000 INFO  [o.n.k.i.DiagnosticsManager]:   active_tx_log: 2015-05-20T16:39:51-0400 - 11.00 B
+2015-06-23 19:33:01.140+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-06-23 19:33:01.141+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene-store.db: 2015-06-23T15:33:00-0400 - 40.00 B
+2015-06-23 19:33:01.141+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.1: 2015-06-23T15:33:01-0400 - 16.00 B
+2015-06-23 19:33:01.142+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.active: 2015-06-23T15:33:01-0400 - 4.00 B
+2015-06-23 19:33:01.142+0000 INFO  [o.n.k.i.DiagnosticsManager]:     lucene.log.v0: 2015-06-23T15:33:00-0400 - 16.00 B
+2015-06-23 19:33:01.142+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-06-23T15:33:01-0400 - 76.00 B
+2015-06-23 19:33:01.143+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:01.143+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-06-23T15:33:01-0400 - 148.22 kB
+2015-06-23 19:33:01.143+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-06-23T15:33:00-0400 - 81.00 B
+2015-06-23 19:33:01.144+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.144+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-06-23T15:33:00-0400 - 5.00 B
+2015-06-23 19:33:01.144+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.145+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-06-23T15:33:00-0400 - 114.00 B
+2015-06-23 19:33:01.145+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.146+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-06-23T15:33:00-0400 - 60.00 B
+2015-06-23 19:33:01.146+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.146+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-06-23T15:33:00-0400 - 136.00 B
+2015-06-23 19:33:01.147+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.147+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-06-23T15:33:00-0400 - 451.00 B
+2015-06-23 19:33:01.147+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-06-23T15:33:00-0400 - 256.00 B
+2015-06-23 19:33:01.148+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.148+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.148+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-06-23T15:33:00-0400 - 27.00 B
+2015-06-23 19:33:01.149+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.149+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-06-23T15:33:00-0400 - 190.00 B
+2015-06-23 19:33:01.150+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.150+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-06-23T15:33:00-0400 - 256.00 B
+2015-06-23 19:33:01.150+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.151+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-06-23T15:33:00-0400 - 25.00 B
+2015-06-23 19:33:01.151+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.151+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:01.152+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.152+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:01.153+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.153+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-06-23T15:33:00-0400 - 76.00 B
+2015-06-23 19:33:01.153+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.154+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-06-23T15:33:00-0400 - 256.00 B
+2015-06-23 19:33:01.154+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-06-23T15:33:00-0400 - 9.00 B
+2015-06-23 19:33:01.154+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.1: 2015-06-23T15:33:00-0400 - 16.00 B
+2015-06-23 19:33:01.155+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.active: 2015-06-23T15:33:00-0400 - 4.00 B
+2015-06-23 19:33:01.155+0000 INFO  [o.n.k.i.DiagnosticsManager]:   nioneo_logical.log.v0: 2015-06-23T15:33:00-0400 - 2.92 kB
+2015-06-23 19:33:01.155+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-06-23 19:33:01.155+0000 INFO  [o.n.k.i.DiagnosticsManager]:     index:
+2015-06-23 19:33:01.156+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-06-23 19:33:01.156+0000 INFO  [o.n.k.i.DiagnosticsManager]:         1:
+2015-06-23 19:33:01.157+0000 INFO  [o.n.k.i.DiagnosticsManager]:           _0.cfs: 2015-06-23T15:33:00-0400 - 441.00 B
+2015-06-23 19:33:01.157+0000 INFO  [o.n.k.i.DiagnosticsManager]:           failure-message: 2015-05-20T17:36:13-0400 - 16.00 kB
+2015-06-23 19:33:01.157+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments.gen: 2015-06-23T15:33:00-0400 - 20.00 B
+2015-06-23 19:33:01.158+0000 INFO  [o.n.k.i.DiagnosticsManager]:           segments_2: 2015-06-23T15:33:00-0400 - 258.00 B
+2015-06-23 19:33:01.158+0000 INFO  [o.n.k.i.DiagnosticsManager]:           write.lock: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:01.159+0000 INFO  [o.n.k.i.DiagnosticsManager]:         - Total: 2015-06-23T15:33:00-0400 - 16.70 kB
+2015-06-23 19:33:01.159+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-05-20T17:36:13-0400 - 16.70 kB
+2015-06-23 19:33:01.160+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-05-20T17:36:13-0400 - 16.70 kB
+2015-06-23 19:33:01.160+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-06-23 19:33:01.160+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-06-23 19:33:01.161+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _4.cfs: 2015-06-23T15:33:00-0400 - 225.00 B
+2015-06-23 19:33:01.161+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2015-06-23T15:33:00-0400 - 20.00 B
+2015-06-23 19:33:01.161+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_2: 2015-06-23T15:33:00-0400 - 244.00 B
+2015-06-23 19:33:01.162+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:01.162+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-06-23T15:33:00-0400 - 489.00 B
+2015-06-23 19:33:01.162+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-06-23T15:32:59-0400 - 489.00 B
+2015-06-23 19:33:01.162+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-05-20T17:36:13-0400 - 17.18 kB
+2015-06-23 19:33:01.163+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-05-20T16:39:50-0400 - 0.00 B
+2015-06-23 19:33:01.163+0000 INFO  [o.n.k.i.DiagnosticsManager]:   tm_tx_log.1: 2015-06-23T15:33:00-0400 - 0.00 B
+2015-06-23 19:33:01.163+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-06-23 19:33:01.165+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2015-06-23 19:33:01.864+0000 INFO  [o.n.s.d.LifecycleManagingDatabase]: Successfully started database
+2015-06-23 19:33:01.864+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED START ---
+2015-06-23 19:33:01.956+0000 INFO  [o.n.s.CommunityNeoServer]: Starting HTTP on port :7000 with 40 threads available
+2015-06-23 19:33:02.217+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator START ---
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: Server configuration:
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.database.location = data/graph.db
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.port = 7000
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.enabled = false
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.port = 7473
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.cert.location = conf/ssl/snakeoil.cert
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.key.location = conf/ssl/snakeoil.key
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.keystore.location = data/keystore
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.rrdb.location = data/rrd
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.db.tuning.properties = conf/neo4j.properties
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.manage.console_engines = shell
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.enabled = false
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.config = conf/neo4j-http-logging.xml
+2015-06-23 19:33:02.219+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.management.uri = /db/manage/
+2015-06-23 19:33:02.220+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.data.uri = /db/data/
+2015-06-23 19:33:02.220+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for org.neo4j.server.configuration.Configurator END ---
+2015-06-23 19:33:02.225+0000 INFO  [o.n.s.m.DiscoveryModule]: Mounted discovery module at [/]
+2015-06-23 19:33:02.235+0000 INFO  [o.n.s.m.RESTApiModule]: Mounted REST API at [/db/data/]
+2015-06-23 19:33:02.239+0000 INFO  [o.n.s.m.ManagementApiModule]: Mounted management API at [/db/manage/]
+2015-06-23 19:33:02.239+0000 INFO  [o.n.s.m.WebAdminModule]: Mounted webadmin at [/webadmin]
+2015-06-23 19:33:02.239+0000 INFO  [o.n.s.m.Neo4jBrowserModule]: Mounted Neo4j Browser at [/browser]
+2015-06-23 19:33:02.315+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/webadmin] from [webadmin-html]
+2015-06-23 19:33:02.382+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/browser] from [browser]
+2015-06-23 19:33:03.421+0000 INFO  [o.n.s.CommunityNeoServer]: Server started on: http://localhost:7000/
+2015-06-23 19:33:03.421+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7000/]
+2015-06-23 19:33:03.421+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
+2015-06-23 20:41:29.090+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 3268647ms.
+2015-06-23 21:19:18.031+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 2157472ms.
+2015-06-23 21:19:23.332+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for 555ms.

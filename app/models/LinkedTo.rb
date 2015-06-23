@@ -3,7 +3,8 @@ class LinkedTo
 
   from_class Article
   to_class Article
-  type "linked_to"
+
+  type 'linked_to'
 
   property :relevancy, type: Integer
 end

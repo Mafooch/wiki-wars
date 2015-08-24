@@ -21,6 +21,11 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'bootstrap-sass' # bootstrap
+gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-kaminari-views'
+gem 'simple_form', git: 'git://github.com/plataformatec/simple_form' # form DSL
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,4 +47,4 @@ group :development, :test do
 end
 
 
-gem 'neo4j', '~> 4.1.0'
+gem 'neo4j', '~> 5.0.0'

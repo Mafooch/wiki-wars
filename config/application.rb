@@ -18,7 +18,7 @@ Bundler.require(*Rails.groups)
 
 module WikiWars
   class Application < Rails::Application
-    
+
     config.generators do |g|
       g.orm             :neo4j
     end

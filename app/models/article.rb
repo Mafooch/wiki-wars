@@ -1,8 +1,7 @@
 class Article
   include Neo4j::ActiveNode
+  has_many :out, :articles, rel_class: :Link
 
-  has_many :out, :articles, rel_class: LinkedTo
-
-  property :title
-  property :url
+  property :title, type: String
+  property :url, type: String
 end

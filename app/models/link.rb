@@ -1,5 +1,3 @@
-# require "../config/environment"
-
 class Link
   include Neo4j::ActiveRel
 
